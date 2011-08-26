@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[${TM_RAILS_TEMPLATE_START_RUBY_INLINE}content_for :${1:place} do${TM_RAILS_TEMPLATE_END_RUBY_INLINE}
+		${0}
+${TM_RAILS_TEMPLATE_START_RUBY_INLINE}end${TM_RAILS_TEMPLATE_END_RUBY_INLINE}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cfd</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html.ruby</scope>
+</snippet>
