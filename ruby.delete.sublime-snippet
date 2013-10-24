@@ -1,0 +1,14 @@
+<snippet>
+	<content>
+<![CDATA[
+def new
+	@${1} = ${2}.find(params[:id])
+	@${1}.destroy
+	respond_with @${1}
+end${0} 
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cad</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+	<content>
+<![CDATA[
+def new
+	@${1} = ${2}.new
+
+	respond_with @${1}
+end${0} 
+
+def create
+	@${1} = ${2}.new(params[:${1}])
+
+	respond_with @${1} do |format|
+		if @${1}.save
+			format.html { redirect_to @${1}, notice: I18n.t(:created, model: I18n.t(:${1}, scope: 'activerecord.models')) }
+		else
+			format.html { render action: 'new' }
+		end
+	end
+end 
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>can</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ruby</scope>
+</snippet>
