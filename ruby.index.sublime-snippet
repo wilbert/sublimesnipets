@@ -3,7 +3,7 @@
 <![CDATA[def index
 	@${1} = ${2}.all
 
-	respond_with @{1}
+	respond_with @${1}
 end${0} ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>cai</tabTrigger>
