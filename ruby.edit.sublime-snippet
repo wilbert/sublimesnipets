@@ -1,26 +1,26 @@
 <snippet>
 	<content>
 <![CDATA[
-def new
+def edit
 	@${1} = ${2}.find(params[:id])
 
 	respond_with @${1}
-end${0} 
+end
 
-def create
+def update
 	@${1} = ${2}.find(params[:id])
 
 	respond_with @${1} do |format|
 		if @${1}.update_attributes(params[:${1}])
-			format.html { redirect_to @${1}, notice: I18n.t(:created, model: I18n.t(:${1}, scope: 'activerecord.models')) }
+			format.html { redirect_to @${1}, notice: I18n.t(:updated, model: I18n.t(:${1}, scope: 'activerecord.models')) }
 		else
-			format.html { render action: 'new' }
+			format.html { render action: 'edit' }
 		end
 	end
 end 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>can</tabTrigger>
+	<tabTrigger>cae</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.ruby</scope>
 </snippet>
