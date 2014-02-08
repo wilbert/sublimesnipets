@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[${TM_RAILS_TEMPLATE_START_RUBY_EXPR}sort_link @search, ${1}, t($2, scope: "activerecord.attributes.$3")${TM_RAILS_TEMPLATE_END_RUBY_EXPR}]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sl</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.html.ruby</scope>
+</snippet>
